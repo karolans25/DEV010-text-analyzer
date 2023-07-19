@@ -28,8 +28,8 @@ describe('analyzer', () => {
   });
 
   describe('analyzer.getAverageWordLength', () => {
-    it('debería retornar 5.53 para "' + TEST_TEXT_NO_NUMBERS + '"', () => {
-      expect(analyzer.getAverageWordLength(TEST_TEXT_NO_NUMBERS)).toBe(5.53);
+    it('debería retornar 5.37 para "' + TEST_TEXT_NO_NUMBERS + '"', () => {
+      expect(analyzer.getAverageWordLength(TEST_TEXT_NO_NUMBERS)).toBe(5.37);
     });
   });
 

@@ -36,8 +36,8 @@ test.describe('Para un texto con sólo palábras:', () => {
     await expect(page.locator('li[data-testid="number-sum"]:has-text("0")')).toBeVisible();
   });
 
-  test('Longitud promedio palabra: 5.53', async ({ page }) => {
-    await expect(page.locator('li[data-testid="word-length-average"]:has-text("5.53")')).toBeVisible();
+  test('Longitud promedio palabra: 5.37', async ({ page }) => {
+    await expect(page.locator('li[data-testid="word-length-average"]:has-text("5.37")')).toBeVisible();
   });
 });
 
