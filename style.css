@@ -1,56 +1,130 @@
 /**Selectores de tipo*/
+*{
+    /*align-items: center;*/
+    justify-content: center;
+}
+
 body{
     background-color: #230555;
 } 
 
-button{
-    background-color:darkblue;
+header, footer{
+    /*background-color: var(--color-bg);*/
+    background-color:  #230555;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     color: white;
-    border-radius: 5%;
-    padding: 10px;
-    width: 35%;
+    padding: 3px;
 }
 
+nav{
+    /*background-color: var(--color-bg);*/
+    background-color:  #230555;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-end self-end;
+    justify-content: flex-end;
+    color: white;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70vh;
+}
+
+article{
+    /*padding: 2%;*/
+    align-self: center;
+    width: fit-content;
+}
+
+a{
+    padding: 10px;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+p{
+    width: 310px;
+    padding-left: 5%;
+    /*align-content: flex-start;*/
+}
+
+a ion-icon,span{
+    color: lightblue;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: fit-content;
+}
 
 /**Selectores de clase*/
 .box{
-    padding: 5%;
+    margin: 10px;
+    border-radius: 10px;
+    border-style: ridge;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 80vh;
-    width: auto;
+    padding: 3px;
 }
 
-.container{
-    display: flex;
+/*
+.datos{
     flex-direction: row;
-    columns: 2;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: 100%;
 }
+*/
 
 /**Selectores de id*/
 #data{
-    border-radius: 5%;
-    background: lightblue;
-    background-size: initial;
-    justify-content: space-around;
+    border-radius: 15px;
+    background-color: lightblue;
+    width: 600px;
+    height: fit-content;
+    padding: 30px;
+}
+
+#reset-button{
+    background-color:darkblue;
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+    width: 35%;
+    margin: 10px;
 }
 
 /** Selectores de atributo*/
-textarea[id="msg"] {
+textarea[name="user-input"] {
     resize: none;
     background-color: rgba(255, 255, 255, 0.91);
+
     opacity: 1;
     color: #000000;
-    width: 298px;
-    height: 168px;
+    width: 560px;
+    height: 100px;
     font-style: italic;
     font-size:larger;
     align-self: center;
+    padding: 15px;
+    border-radius: 15px;
 }
+
+ul[class]{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: fit-content;
+    border-style: none;
+}
+
 
 button:hover{
     background-color: cyan;

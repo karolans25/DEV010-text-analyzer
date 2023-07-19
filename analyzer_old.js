@@ -13,15 +13,12 @@ const analyzer = {
     return text.replace(/[^\w\s]/gi, '').replace(/\s+/g, '').length;
   },
   getAverageWordLength: (text) => {
-    const temp = getWords(text);
+    const temp = text.trim().split(' ');
+    //const temp = getWords(text);
     let suma = 0;
-    if (temp.length === 0 ){
-      return 0;
-    } else{
-      temp.forEach(element => {
-        suma += element.length;
-      });
-    }
+    temp.forEach(element => {
+      suma += element.length;
+    });
     return Number((suma/temp.length).toFixed(2));
   },
   getNumberCount: (text) => {

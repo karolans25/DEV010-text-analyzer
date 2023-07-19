@@ -6,33 +6,47 @@
   <title>Analizador de texto</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/png" href="./img/favicon.png"/>
-  <script src="index.js" type="module"></script>
 </head>
 
 <body>
+  <header>
+    <h1>Text Analyzer</h1>
+    <nav>
+      <a href="https://www.twitch.tv/karolans25" ><ion-icon name="logo-twitch"></ion-icon><span>Twitch</span></a>
+      <a href="https://github.com/karolans25/DEV010-cipher" ><ion-icon name="logo-github"></ion-icon><span>Github</span></a>
+    </nav>
+  </header>
 
-  <div class="box" id="root">
-    <div class="box" id="data">
+  <main>
 
-      <h1>Analizador de Texto</h1>
-      <div class="container"  id="opciones">
-        <ul>
-          <li data-testid="character-count">Caracteres: </li>
-          <li data-testid="character-no-spaces-count"></li>
-          <li data-testid="word-count"></li>
-          <li data-testid="number-count"></li>
-          <li data-testid="number-sum"></li>
-          <li data-testid="word-length-average"></li>
-        </ul>
-      </div>
-      <textarea name="user-input" rows="11" cols="41"></textarea>
-      <button id="reset-button">Reset</button>
-    </div> 
-  </div>
+    <article>
+
+      <div id="data">
+
+        <section>
+          <ul class="box">
+            <li class="box" data-testid="character-count">Caracteres: </li>
+            <li class="box" data-testid="character-no-spaces-count"></li>
+            <li class="box" data-testid="word-count"></li>
+            <li class="box" data-testid="number-count"></li>
+            <li class="box" data-testid="number-sum"></li>
+            <li class="box" data-testid="word-length-average"></li>
+          </ul>
+        </section>
+        <section>
+          <textarea name="user-input"></textarea>
+          <button id="reset-button">Reset</button>
+        </section>
+      </div> 
+    </article>
+  </main>
 
   <footer>
-    <p style="color: darkblue; background-color: white; justify-content: center;">Carolina Rosa Pulido Gómez</p>
+    <p>Hecho con <ion-icon name="heart"></ion-icon> por <strong>Carolina Pulido</strong></p>
   </footer>
 
+  <script src="index.js" type="module"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
