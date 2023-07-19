@@ -1,19 +1,11 @@
 # Analizador de texto
 
-## Índice
+![interfaz usuario](src/img/paso0.png)
 
-* [1. Consideraciones generales](#1-consideraciones-generales)
-* [2. Preámbulo](#2-preámbulo)
-* [3. Funcionalidades](#3-funcionalidades)
-* [4. Boilerplate](#4-boilerplate)
-* [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
-* [6. Pruebas](#6-pruebas)
-* [7. Pistas, tips y lecturas complementarias](#7-pistas-tips-y-lecturas-complementarias)
-* [8. Consideraciones para pedir tu Project Feedback](#8-consideraciones-para-pedir-tu-project-feedback)
-* [9. Objetivos de aprendizaje](#9-objetivos-de-aprendizaje)
-* [10. Funcionalidades opcionales](#10-funcionalidades-opcionales)
+![test](src/img/runTest.png)
+![test OAs](src/img/runTestOas.png)
+![test e2e](src/img/runTestE2E.png)
 
-***
 
 ## 1. Consideraciones generales
 
@@ -753,3 +745,4 @@ en los archivos [test/analyzer.spec.js](test/analyzer.spec.js) y
 [read-only/test/e2e/app.spec.js](read-only/test/e2e/app.spec.js).
 También tendrás que ajustar las pruebas ya existentes de las
 funcionalidades requeridas.
+
