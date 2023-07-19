@@ -2,6 +2,11 @@
 
 ![interfaz usuario](src/img/paso0.png)
 
+Esta aplicación sólo está fallando el test de promedio de longitud de palabras, porque yo considero
+que ´hola!´ es una plabra con extensión de 4 caracteres, mientras que el test de pruebas dice que es
+de logitud igual a 5 caracteres. Por tanto, para la prueba les da 5.53 la longitud promedio y a mi me 
+da 5.37 de longitud promedio de palabras para la frase de prueba de ese test.
+
 ![test](src/img/runTest.png)
 ![test OAs](src/img/runTestOas.png)
 ![test e2e](src/img/runTestE2E.png)
